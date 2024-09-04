@@ -1,0 +1,32 @@
+/* Center the navigation links */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-links li.active a {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,51 @@
+/* Center the container and make the cards responsive */
+.courses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style each card */
+.course-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: contain;
+  padding: 15px;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Add hover effect to the cards */
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Style the images within the cards */
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Style the course titles */
+.course-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsive design: adjust the card size on smaller screens */
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
